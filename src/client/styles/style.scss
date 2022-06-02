@@ -1,0 +1,171 @@
+body{
+    background-color: grey;
+    background-image: linear-gradient(to bottom right, #642B73, #ff5e62, #ff9966);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-area: input;
+    grid-template-areas:
+        "input"
+        "generate"
+        "planner";
+    color: #FFBF08;
+    grid-auto-columns: 100%;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    position: relative;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+    margin-bottom: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+    text-align: center;
+}
+
+input{
+    &:hover{
+        background: #6981b8;
+    }
+    &:focus{
+        background: #6981b8;
+    }
+    display:block;
+    height: 20%;
+    width: 35%;
+    background:#3b4a6b;
+    color: #FFBF08;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    margin: auto;
+}
+
+button{
+    &:hover{
+        background: #6981b8;
+    }
+    width: 400px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #FFBF08 ;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: #FFBF08;
+}
+.input{
+ 
+    width: 100%;
+}
+#generate{
+    grid-area: generate;
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+#planner{
+    grid-area: planner;
+    text-align: center;
+    color: #FFBF08;
+    width: 100%;
+}
+.deleteButton{
+    &:active{
+        background: darkred;
+    }
+    width: 80%;
+}
+
+.weatherInfo{
+    margin-bottom: 50px;
+}
+img{
+    width: 80%;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #FFBF08 ; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #FFBF08 ; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #FFBF08 ; 
+    font-family: 'Oswald', sans-serif;
+
+}
+
+//media queries
+@media only screen and (max-width: 799px){
+    .entry{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    img{
+        width: 100%;
+    }
+    
+    
+  }
+
+@media only screen and (min-width: 800px){
+    .entry{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    
+  }
+
+@media only screen and (min-width: 1500px) {
+    .entry{
+    margin-left: 25%;
+    margin-right: 25%;
+    }
+    
+    
+  }
+
+
+
+

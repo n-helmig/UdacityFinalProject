@@ -1,0 +1,47 @@
+{
+  "name": "travel-planner",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "start": "node --experimental-modules src/server/server.js --open"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "input-format": "^0.3.7",
+    "regenerator-runtime": "^0.13.9",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+    "@babel/preset-env": "^7.5.4",
+    "babel-jest": "^28.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.0.0",
+    "dotenv": "^16.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^27.5.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "supertest": "^6.2.3",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack-dev-server": "^3.7.2",
+    "workbox-webpack-plugin": "^6.5.1"
+  }
+}
